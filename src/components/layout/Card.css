@@ -1,0 +1,24 @@
+.card {
+    background-color: red;
+    border: 3px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.card .titulo {
+    padding: 15x 0px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card .conteudo {
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
