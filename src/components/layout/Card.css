@@ -5,6 +5,10 @@
     overflow: hidden;
     padding: 10px 10px;
     margin: 10px;
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card .titulo {
@@ -16,6 +20,7 @@
 }
 
 .card .conteudo {
+    flex-grow: 1;
     border: 3px solid white;
     border-radius: 10px;
     background-color: white;
