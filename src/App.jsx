@@ -1,3 +1,5 @@
+
+
 import './App.css'
 import Primeiro from './components/basicos/primeiro'
 import ComParametro from './components/basicos/comParametro'
@@ -5,6 +7,7 @@ import Fragmento from './components/basicos/Fragmento'
 import DesafioNumAleatorio from './components/basicos/DesafioNumAleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/familia'
+import FamiliaMenbro from './components/basicos/familiaMenbro'
 
 
 export default _ =>
@@ -12,10 +15,11 @@ export default _ =>
         <h1>Fundamentos React</h1>
         <div className='cards'>
             <Card titulo="Componente com filho" color="#CCCCFF">
-                <Familia nome="Flavio" sobrenome="Cabral"/>
-                <Familia nome="Clara" sobrenome="Cabral"/>
-                <Familia nome="Andreia" sobrenome="Cabral"/>
-                <Familia nome="Eliane" sobrenome="Cabral"/>
+                <Familia sobrenome="Cabral">
+                    <FamiliaMenbro nome="Flavio" />
+                    <FamiliaMenbro nome="Andreia" />
+                    <FamiliaMenbro nome="Clara" />
+                </Familia>
             </Card>
             <Card titulo="Primeiro Componente" conteudo="Conteudo do card" color="#FA8072">
                 <Primeiro></Primeiro>
