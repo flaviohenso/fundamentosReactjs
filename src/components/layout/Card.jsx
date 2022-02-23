@@ -1,9 +1,14 @@
 export default props => {
 
-    const { titulo, conteudo } = props
+    const { titulo, conteudo, color } = props
 
-    return (<div className="card">
-        <div className="titulo" >{titulo}</div>
+    const cardStyle = {
+        backgroundColor: color,
+        borderColor: color,
+    }
+
+    return (<div className="card" style={cardStyle}>
+        <div className="titulo">{titulo}</div>
         <div className="conteudo">Conteudo: {conteudo} <br/>{props.children}</div>
     </div>)
 }
