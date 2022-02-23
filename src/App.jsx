@@ -8,12 +8,16 @@ import DesafioNumAleatorio from './components/basicos/DesafioNumAleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/familia'
 import FamiliaMenbro from './components/basicos/familiaMenbro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 
 export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='cards'>
+            <Card titulo="Repeticao" color="#CCCCFF">
+                <ListaAlunos/>
+            </Card>
             <Card titulo="Componente com filho" color="#CCCCFF">
                 <Familia sobrenome="Cabral">
                     <FamiliaMenbro nome="Flavio" />
