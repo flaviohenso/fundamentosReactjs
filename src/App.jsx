@@ -10,13 +10,17 @@ import Familia from './components/basicos/familia'
 import FamiliaMenbro from './components/basicos/familiaMenbro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
 
 
 export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='cards'>
-            <Card titulo="Repeticao Desafil" color="#008080">   
+            <Card titulo="Repeticao Desafio" color="#48ff00">   
+                <ParOuImpar numero={21}/>
+            </Card>
+            <Card titulo="Repeticao Desafio" color="#008080">   
                 <TabelaProdutos/>
             </Card>
             <Card titulo="Repeticao" color="#FF00FF">
