@@ -19,7 +19,7 @@ export default props => {
                     <th>{produto.id}</th>
                     <th>{produto.nome}</th>
                     <th>{produto.categoria}</th>
-                    <th>{produto.preco}</th>
+                    <th>R$ {produto.preco.toFixed(2)}</th>
                 </tr>
                 })}
             </tbody>

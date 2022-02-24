@@ -1,5 +1,6 @@
 table, th, td  {
     border-bottom: 1px solid #ddd;
+    width: 100%;
 }
 
 tbody tr:hover {
@@ -10,3 +11,7 @@ thead {
     background-color: #008080;
     color: white;
   }
+
+tr:nth-child(even) {
+    background-color: #dbdbdb;
+}
