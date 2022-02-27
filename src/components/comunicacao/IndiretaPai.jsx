@@ -1,16 +1,17 @@
+import { useState } from "react"
 import IndiretaFilho from "./IndiretaFilho"
 
 export default props => {
 
-    let nome = '?'
-    let idade = 0
-    let sexo = 0
+    const [nome, setNome] = useState('?')
+    const [idade, setIdade] = useState(0)
+    const [sexo, setSexo] = useState('M')
 
 function informacoes(nomeParam, idadeParam, sexoParam){
     console.log(nomeParam, idadeParam, sexoParam)
-    nome = nomeParam
-    idade = idadeParam
-    sexo = sexoParam
+    setNome(nomeParam)
+    setIdade(idadeParam)
+    setSexo(sexoParam)
 }
 
     return <div>
