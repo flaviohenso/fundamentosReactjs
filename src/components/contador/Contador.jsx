@@ -1,6 +1,9 @@
 import './contador.css'
 
 import { Component } from "react";
+import Display from './Display';
+import Actions from './Actions';
+import InputPasso from './InputPasso';
 
 class Contador extends Component {
 
@@ -29,14 +32,9 @@ class Contador extends Component {
 
     render() {
         return <div>
-            <h1>Contador = </h1> <strong>{this.state.contador}</strong>
-            <div>
-                <input type={'number'} value={this.state.passo} onChange={this.init}/>
-            </div>
-            <div className="buttons">
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
-            </div>
+            <Display contador={this.state.contador}/>
+            <InputPasso valuePasso={this.state.passo} onInit={this.init} />
+            <Actions onInc={this.inc} onDec={this.dec}/>
         </div>
     }
 
