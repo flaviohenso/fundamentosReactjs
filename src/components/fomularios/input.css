@@ -1,0 +1,9 @@
+.entrada h2{
+    font-size: 38px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
