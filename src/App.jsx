@@ -16,13 +16,17 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/fomularios/Input'
 import Contador from './components/contador/Contador'
+import DesafioMegaSena from './components/desafio/DesafioMegaSena'
 
 
 export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='cards'>
-            <Card titulo="Contador #01" color="	#FFF8DC">   
+            <Card titulo="Desafio Mega sena" color="#F0FFF0">   
+                <DesafioMegaSena quantidadeNumeros={15}/>
+            </Card>
+            <Card titulo="Contador #01" color="#FFF8DC">   
                 <Contador numeroInicial={10}/>
             </Card>
             <Card titulo="Componente controlado" color="#4B0082">   

@@ -1,0 +1,22 @@
+.resultado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero {
+
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+
+    margin: 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
